@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"\n.container {\n    \n}\n\n.gallery {\n    margin: 10px;\n}\n\n.gallery img {\n    transition: 1s;\n    padding: 15px;\n    width: 200px;\n}\n\n.gallery img:hover {\n    filter:grayscale(100%);\n    transform: scale(1.1);\n}"
+	],
+	"names": [],
+	"mappings": ";AAKA,AAAA,QAAQ,CAAC;EACL,MAAM,EAAE,IAAI;CACf;;;AAED,AAAA,QAAQ,CAAC,GAAG,CAAC;EACT,UAAU,EAAE,EAAE;EACd,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;CACf;;;AAED,AAAA,QAAQ,CAAC,GAAG,AAAA,MAAM,CAAC;EACf,MAAM,EAAC,eAAe;EACtB,SAAS,EAAE,UAAU;CACxB"
+}

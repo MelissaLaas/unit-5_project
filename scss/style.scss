@@ -1,5 +1,10 @@
+
+.container {
+    
+}
+
 .gallery {
-    margin: 10px 50px;
+    margin: 10px;
 }
 
 .gallery img {
@@ -11,5 +16,4 @@
 .gallery img:hover {
     filter:grayscale(100%);
     transform: scale(1.1);
-
 }

@@ -1,22 +1,25 @@
+
 window.addEventListener('load', function() {
-    baguetteBox.run('.gallery');
+  baguetteBox.run('.gallery');
 });
+
+// const search = new Filter('search', 'data-caption');​ removed 
 
 let input = document.querySelector('input');
 let photos = document.getElementsByTagName('a');
 
-const filter = () => {
-    let x = input.value.toLowerCase();
+const searchFilter = () => {
+  let x = input.value.toLowerCase();
 
-    for (let i = 0; i < photos.length; i++){
-      let title = photos[i].getAttribute('data-caption').toLowerCase();
+  for (let i = 0; i < photos.length; i++){
+    let caption = photos[i].getAttribute('data-caption').toLowerCase();
 
-      if (title.includes(x)) {
-        photos[i].style.display = 'block';
-      } else {
-        photos[i].style.display = 'none';
-      }
+    if (caption.includes(x)) {
+      photos[i].style.display = 'block';
+    } else {
+      photos[i].style.display = 'none';
     }
-  };
+  }
+};
 
- input.addEventListener('keyup', filter);  
+input.addEventListener('keyup', searchFilter);  

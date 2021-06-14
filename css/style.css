@@ -1,19 +1,87 @@
-/* line 6, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
-.gallery {
-  margin: 10px;
+/*--- Base Styles ---*/
+/* line 2, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* line 10, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+/* line 8, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+body {
+  height: 100vh;
+}
+
+/* line 12, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+nav {
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+/* line 18, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+h2 {
+  padding-bottom: 10px;
+  color: darkgrey;
+  transition: .4s;
+}
+
+/* line 24, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+a {
+  text-decoration: none;
+  transition: .4s;
+}
+
+/* line 29, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+.searchbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+/* line 35, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+#search {
+  text-align: center;
+  font-size: 12px;
+  height: 40px;
+  width: 50%;
+  border: 3px solid lightgray;
+  border-radius: 5px;
+  transition: .4s;
+  box-shadow: 1px 2px 2px #95c0ab;
+}
+
+/* line 46, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+#search:hover,
+#search:focus {
+  background-color: #e6e6e6;
+  border: 3px solid lightgray;
+}
+
+/* line 52, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
 .gallery img {
   transition: 1s;
-  padding: 15px;
+  padding: 10px;
   width: 200px;
 }
 
-/* line 16, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+/* line 58, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
 .gallery img:hover {
   filter: grayscale(100%);
   transform: scale(1.1);
+  box-shadow: 2px 4px 1px #95c0ab;
+}
+
+/*--- Grid layout ---*/
+/* line 66, ../../../../../Users/melissalaas/Desktop/Web-Development/UNIT 5 - Javascript/unit-5_project/scss/style.scss */
+.gallery,
+#search {
+  display: grid;
+  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  grid-template-rows: 200px;
+  grid-gap: 10px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
